@@ -1,0 +1,26 @@
+
+<h3>Home</h3>
+<p>Welcome to the home of
+<%=
+@owner
+.
+name
+%>
+.</p>
+<p>I was born on
+<%=
+@owner
+.
+birthdate
+%>
+.</p>
+<p>Only
+<%=
+@owner
+.
+countdown
+%>
+
+
+days until my birthday!</p>
+<%= (Date.new(today.year, @owner.birthdate.month, @owner.birthdate.day) - Date.today).to_i %>
